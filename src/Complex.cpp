@@ -55,10 +55,11 @@ void Complex::print() const
 // TODO(7)
 double Complex::getReal() const
 {
-    return 0;  // 占位
+    return this->n_real;
 }
 
 // TODO(8)
-double Complex::getImag() const {
-    return 0;  // 占位
+double Complex::getImag() const
+{
+    return this->n_imag;
 }
