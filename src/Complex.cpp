@@ -38,12 +38,23 @@ Complex Complex::operator-(const Complex& other) const
 }
 
 // TODO(6): 按约定格式打印
-void Complex::print() const {
-    cout << "TODO" << endl;
+void Complex::print() const
+{
+    std::cout<<this->n_real;
+    if(this->n_imag>=0)
+    {
+      std::cout<<" + "<<this->n_imag<<"i";
+    }
+    else
+    {
+      std::cout<<" - "<<-(this->n_imag)<<"i";
+    }
+    std::cout<<std::endl;
 }
 
 // TODO(7)
-double Complex::getReal() const {
+double Complex::getReal() const
+{
     return 0;  // 占位
 }
 
